@@ -1,0 +1,471 @@
+[
+    {
+        "keywords": ["hi", "hello", "hey", "greetings", "hiii", "hi there", "good morning", "good afternoon", "good evening", "namaste", "namaskar", "hola", "welcome", "howdy"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Hello! Welcome to India Post Assistant. I can help you with postal services, banking schemes, insurance, and more. How may I assist you today?",
+                "Namaskar! Welcome to India Post Assistant. I can help with tracking, banking, insurance, and postal services. What do you need today?",
+                "Hello! You've reached India Post's virtual assistant. Would you like help with Speed Post, savings schemes, or something else?",
+                "Good day! I can assist with parcel tracking, post office locations, and financial services. How may I help?"
+            ]
+        },
+        "options": [
+            { "text": "Track & Trace", "value": "track_trace" },
+            { "text": "Find Post Office", "value": "find_nearest_post_office" },
+            { "text": "Banking Services", "value": "banking_schemes" },
+            { "text": "Insurance Schemes", "value": "insurance_schemes" },
+            { "text": "Complaints", "value": "complaint" },
+            { "text": "Postal Services", "value": "postal_services" }
+        ]
+    },
+    {
+        "keywords": ["bye", "goodbye", "see you", "farewell", "exit", "quit", "close", "end", "that's all", "done"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Thank you for using India Post services! Have a great day. Remember, you can always come back for any postal or banking assistance you need.",
+                "Thank you for using India Post services! Visit us again for any postal or banking needs. Have a great day!",
+                "We appreciate you choosing India Post. For future reference, our website is always available: https://www.indiapost.gov.in",
+                "Goodbye! Remember, you can track shipments anytime at https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx"
+            ]
+        }
+    },
+    {
+        "keywords": ["thanks", "thank you", "appreciate it", "i appreciate your help", "thankyou", "thnx", "thanks a lot", "grateful", "obliged"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "You're most welcome! It's my pleasure to assist you with India Post services. Is there anything else you'd like to know about our postal or banking services?",
+                "You're welcome! For quick access later, bookmark our services page: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx",
+                "Happy to help! Did you know you can now pay post office bills online? Visit https://www.ippbonline.com/ for details.",
+                "Glad to assist! You might also find our FAQ section helpful: https://www.indiapost.gov.in/vas/Pages/FAQ.aspx"
+            ]
+        },
+        "options": [
+            { "text": "Yes, more help", "value": "hi" },
+            { "text": "No, I'm done", "value": "bye" },
+            { "text": "Give Feedback", "value": "feedback" }
+        ]
+    },
+    {
+        "keywords": ["track_trace", "tracking", "package", "where is my parcel", "track my order", "speed post", "registered post", "track", "parcel status", "consignment status", "article tracking", "item tracking"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "You can track your India Post shipment using these methods:\n1. Website: https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx\n2. SMS: Send SMS to 166 or 51969 in format: POST track <itemID>\n3. Mobile App: India Post 'Track and Trace' app\n\nTracking is available for: Speed Post, Registered Post, Express Parcel, Business Parcel & International Mail",
+                "Track your India Post item:\n1. Website: https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx\n2. SMS: POST <13-digit-tracking-number> to 166\n3. Mobile App: 'India Post Tracking'\n\nTracking numbers start with:\n• EM (Speed Post)\n• CP (Express Parcel)\n• RX (Registered Post)",
+                "For parcel tracking:\n• International: https://ipsweb.ptcmysore.gov.in\n• SMS alerts: Register at your local post office\n• Common statuses:\n  - Booked → In Transit → Out for Delivery\n  - Delivery Attempted → Delivered",
+                "Pro Tracking Tips:\n1. Check last 3 status updates for current location\n2. Missed delivery? Contact your local post office\n3. Delivery times:\n   - Domestic: 1-7 days\n   - International: 7-30 days"
+            ]
+        },
+        "options": [
+            { "text": "Track Another Item", "value": "track_trace" },
+            { "text": "Delivery Complaint", "value": "delivery_complaint" },
+            { "text": "Shipping Rates", "value": "shipping_cost" }
+        ]
+    },
+    {
+        "keywords": ["find_nearest_post_office", "nearest post office", "post office nearby", "locate post office", "find post office", "where is post office", "post office location", "post office finder"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "You can find post offices through these options:",
+                "Find post offices:\n1. PIN Code Search: https://www.indiapost.gov.in/vas/Pages/FindPincod.",
+                "Location Map: https://www.indiapost.gov.in/vas/Pages/FindPostOffice.aspx. SMS: POSTOFFICE <PINCODE> to 51969"
+               
+            ]
+        },
+        "options": [
+            { "text": "By Location (GPS)", "value": "find_office_by_location" },
+            { "text": "By PIN Code", "value": "find_by_pincode" },
+            { "text": "Online Directory", "value": "post_office_directory" }
+          
+        ]
+    },
+    {
+        "keywords": ["banking_schemes", "post office banking", "savings schemes", "investment options", "post bank", "financial services", "small savings"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post offers these popular banking services:",
+                "Popular Savings Schemes (2024):\n1. Sukanya Samriddhi: 8.2%\n2. Senior Citizen Scheme: 8.2%\n3. PPF: 7.1%\nCompare all: https://www.indiapost.gov.in/vas/DOP/Pdf/Small_Savings_01042024.pdf",
+                "Digital Banking Options:\n• Internet Banking: https://www.indiapost.gov.in/vas/Pages/InternetBanking.aspx\n• IPPB App: https://www.ippbonline.com\n• SMS Banking: Register at your post office\nAll schemes qualify for Section 80C tax benefits",
+                "Investment Guide:\n• Minimum Investments:\n  - SB Account: ₹500\n  - RD: ₹100/month\n  - FD: ₹1,000\n• Tax Benefits:\n  - Up to ₹1.5 lakh under 80C\n  - ₹50,000 under 80CCD(1B) for NPS"
+            ]
+        },
+        "options": [
+            { "text": "Savings Account (SB)", "value": "sb" },
+            { "text": "Recurring Deposit (RD)", "value": "rd" },
+            { "text": "Fixed Deposit (TD)", "value": "td" },
+            { "text": "Monthly Income Scheme", "value": "mis" },
+            { "text": "Senior Citizens Scheme", "value": "scss" },
+            { "text": "PPF Account", "value": "ppf" },
+            { "text": "Sukanya Samriddhi", "value": "ssy" },
+            { "text": "Mahila Samman", "value": "ms" },
+            { "text": "Compare All Schemes", "value": "compare_schemes" }
+        ]
+    },
+    {
+        "keywords": ["sb", "savings account", "post office savings", "savings bank", "posb", "post office sb"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Post Office Savings Account (SB):\n• Interest Rate: 4.0% p.a.\n• Min Balance: ₹500 (₹100 for minors)\n• Features:\n  - No upper limit\n  - ATM-cum-Debit Card\n  - Mobile/Internet Banking\n  - Cheque facility\n  - Tax benefit on interest up to ₹10,000 (Sec 80TTA)\n• Documents Needed: Aadhaar, PAN, Address Proof, 2 Photos",
+                "Post Office Savings Account:\n• Interest: 4.0% p.a. (quarterly compounding)\n• Min Balance: ₹500 (₹100 for minors)\n• Features:\n  - Free ATM card\n  - Online banking\n  - Joint accounts\n\nApply online: https://www.indiapost.gov.in/vas/DOP/Pdf/SB-Account-Opening-Form.pdf",
+                "Digital Services for SB Accounts:\n1. Balance Check: https://ebanking.indiapost.gov.in/\n2. SMS: BAL <AccountNo> to 7738062873\n3. Missed call service\n\n*Tax Benefit:* Interest up to ₹10,000 exempt under Section 80TTA",
+                "SB Account Highlights:\n• No maximum balance limit\n• Cheque book facility available\n• Nomination facility\n• Transferable to any post office\n• Interest calculated on daily balance\n\nDocuments needed: Aadhaar, PAN, Address Proof, 2 passport photos"
+            ]
+        }
+    },
+    {
+        "keywords": ["rd", "recurring deposit", "monthly savings", "installment scheme"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Recurring Deposit (RD) Details:\n• Interest Rate: 6.7% p.a. (compounded quarterly)\n• Tenure: 5 years (min 6 months)\n• Min Deposit: ₹100/month (no max limit)\n• Premature Closure: After 3 years (with penalty)\n• Tax Benefit: Up to ₹1.5 lakh under Sec 80C\n• Auto-debit facility available",
+                "Recurring Deposit (2024):\n• Rate: 6.7% p.a. (compounded quarterly)\n• Tenure: 5 years (min 6 months)\n• Min Deposit: ₹100/month\n\nCalculate maturity: https://www.indiapost.gov.in/vas/Pages/Calculators.aspx",
+                "RD Features:\n• Auto-debit facility available\n• Premature withdrawal after 3 years (with penalty)\n• Loan against RD up to 50% balance\n• Tax benefit under Section 80C\n\nApply with: Aadhaar, PAN, and passport photo",
+                "RD Pro Tips:\n1. Increase monthly deposits annually\n2. Set up ECS for automatic payments\n3. Senior citizens get 0.5% extra interest\n4. Use maturity calculator for planning\n\nDefault penalty: ₹1 per ₹100 for missed installments"
+            ]
+        }
+    },
+    {
+        "keywords": ["td", "time deposit", "fixed deposit", "fd", "term deposit"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Time Deposit (FD) Options:\n\n1 Year FD - 6.9%\n2 Year FD - 7.0%\n3 Year FD - 7.1%\n5 Year FD - 7.5% (Eligible for 80C deduction)\n\n• Min Deposit: ₹1,000\n• Interest payout: Monthly/Quarterly/Yearly/Cumulative\n• Loan against FD available\n• Nomination facility",
+                "Fixed Deposit Rates (2024):\n1 Year: 6.9%\n2 Year: 7.0%\n3 Year: 7.1%\n5 Year: 7.5% (Tax saving)\n\nCompare with banks: https://www.rbi.org.in/scripts/FS_Cal.aspx",
+                "FD Options:\n• Monthly/Quarterly interest payout\n• Cumulative (compound interest)\n• Tax Saver (5-year lock-in)\n• Senior Citizen (+0.5% interest)\n\nMin Deposit: ₹1,000 (no max limit)",
+                "FD Special Features:\n• Loan against FD up to 75% value\n• Automatic renewal facility\n• Multiple FDs from single account\n• Nomination facility available\n\nPremature withdrawal penalty: 1% interest reduction"
+            ]
+        }
+    },
+    {
+        "keywords": ["ms", "mahila", "mahila samman", "women's savings", "mahila_savings", "ladies scheme", "women deposit"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Mahila Samman Savings Certificate:\n• For: Women/Girls of any age\n• Tenure: 2 years (extendable by 2 more years)\n• Interest: 7.5% p.a. (compounded quarterly)\n• Investment: ₹1,000 - ₹2,00,000\n• Partial withdrawal: Up to 40% after 1 year\n• Tax: No deduction under 80C\n• Can be opened at any post office",
+                "Mahila Samman Savings Certificate:\n• For women/girls of any age\n• Tenure: 2 years (extendable to 2 more)\n• Interest: 7.5% p.a. (quarterly compounding)\n• Investment: ₹1,000-₹2,00,000\n• Partial withdrawal: Up to 40% after 1 year",
+                "Women's Savings Scheme:\n• No tax deduction under 80C\n• Can be opened at any post office\n• Joint account not allowed\n• Transferable between post offices\n\nDocuments needed: Aadhaar, PAN, address proof, photo",
+                "Key Benefits:\n1. Higher interest than regular FD\n2. Flexible tenure\n3. No upper age limit\n4. Multiple accounts allowed\n5. No TDS deduction\n\nIdeal for short-term savings goals"
+            ]
+        }
+    },
+    {
+        "keywords": ["postal_services", "mail services", "post services", "letter services", "parcel services", "delivery services"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post Services Available:",
+                "Core Postal Services:\n1. Speed Post (1-3 days)\n2. Registered Post (proof of mailing)\n3. Parcel Service (up to 35kg)\n4. Money Order\n\nBook online: https://www.epostoffice.gov.in/",
+                "Special Services:\n• Business Parcel: https://www.indiapost.gov.in/vas/Pages/BusinessParcel.aspx\n• Logistics Post\n• Media Mail\n• e-Post\n\nRates calculator: https://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx",
+                "Service Highlights:\n• Cash on Delivery available\n• Free package pickup (for premium services)\n• SMS alerts for delivery status\n• Insurance options\n• Saturday delivery in major cities"
+            ]
+        },
+        "options": [
+            { "text": "Speed Post", "value": "speed_post" },
+            { "text": "Registered Post", "value": "registered_post" },
+            { "text": "Money Order", "value": "money_order" },
+            { "text": "Parcel Service", "value": "parcel_service" },
+            { "text": "International Mail", "value": "international_mail" }
+        ]
+    },
+    {
+        "keywords": ["speed_post", "fast post", "urgent delivery", "express mail", "e-commerce delivery"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Speed Post Services:\n• Delivery Time: 1-3 days (domestic)\n• Weight Limit: Up to 35kg\n• Tracking: Real-time online\n• Coverage: 1000+ cities\n• Special Services:\n  - Cash on Delivery\n  - Insurance\n  - Pickup from premises\n• Rates: Starts from ₹35 for 50gm"
+            ]
+        }
+    },
+    {
+        "keywords": ["registered_post", "proof of mailing", "secure mail", "regd post"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Registered Post ensures a secure mailing with proof of booking and delivery. It's ideal for important documents or valuables. Each item gets a unique tracking number."
+            ]
+        }
+    },
+    {
+        "keywords": ["money_order", "electronic money order", "eMO", "send money"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Money Order services allow you to send money safely to any post office location. The e-Money Order (eMO) is a fast, electronic option for transferring funds."
+            ]
+        }
+    },
+    {
+        "keywords": ["parcel_service", "business parcel", "express parcel", "ship package", "package delivery"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Parcel Service is designed for sending packages up to 35kg. Options include Business Parcel and Express Parcel, with online tracking and insurance available."
+            ]
+        }
+    },
+    {
+        "keywords": ["international_mail", "foreign post", "overseas mail", "global mail", "international shipping", "ems"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "International Mail Services:\n1. International Speed Post (to 100+ countries)\n2. EMS (Express Mail Service)\n3. Air Mail (Letters & Small Packets)\n4. Surface Mail (Economy option)\n5. Business Parcel\n\n• Customs declaration required\n• Prohibited items list available on website\n• Trackable options available",
+                "International Services:\n1. EMS Speed Post (3-7 days)\n2. Air Mail (7-15 days)\n3. Surface Mail (1-3 months)\n\nProhibited items list: https://www.indiapost.gov.in/vas/DOP/Pdf/Prohibited_Goods.pdf",
+                "Global Shipping Tips:\n• Always complete customs declaration\n• Recommended insurance:\n  - Documents: ₹10,000 free\n  - Parcels: ₹5 per ₹100 value\n• Track via: https://ipsweb.ptcmysore.gov.in",
+                "Country-Specific Info:\n• USA/UK: 5-7 days (EMS)\n• Middle East: 3-5 days\n• Europe: 4-7 days\n• Asia Pacific: 2-4 days\n\nRates: https://www.indiapost.gov.in/vas/Pages/InternationalTariff.aspx"
+            ]
+        }
+    },
+    {
+        "keywords": ["post_office_directory", "post office list", "all post offices", "find office by pincode", "find office by location"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "You can access the complete India Post office directory here:\nhttps://www.indiapost.gov.in/vas/pages/find-post-office.aspx\n\nSearch by:\n- State/City\n- PIN Code\n- Office Name\n- Office Type (Head Office, Sub Office etc.)",
+                "Complete Post Office Directory:\nhttps://www.indiapost.gov.in/vas/pages/find-post-office.aspx\n\nSearch by:\n- State/City\n- PIN Code\n- Office Name\n- Office Type",
+                "Post Office Network:\n• 1.5 lakh+ post offices\n• 1.3 lakh rural offices\n• 25,000+ with banking services\n• 500+ Passport Seva Kendras\n\nFind your nearest: SMS POSTOFFICE <PINCODE> to 51969"
+            ]
+        }
+    },
+    {
+        "keywords": ["pin_code", "postal code", "pincode search", "find pincode", "verify pincode"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Find PIN Code:\n1. Official Search: https://www.indiapost.gov.in/vas/pages/findpincode.aspx\n2. SMS: Send 'PINCODE <location>' to 166 or 51969\n3. Mobile App: India Post 'Pincode Finder'\n\nContains 6 digits representing specific postal region",
+                "PIN Code Search Options:\n1. Official Portal: https://www.indiapost.gov.in/vas/pages/findpincode.aspx\n2. SMS: PINCODE <location> to 166\n3. Mobile App: 'India Post Pincode Finder'\n\nPIN Structure:\n• 1st digit: Region\n• 2nd digit: Sub-region\n• 3rd digit: District\n• Last 3 digits: Post office",
+                "Find Your PIN Code:\n• Urban Areas: Unique for each post office\n• Rural Areas: May cover multiple villages\n• Special Codes:\n  - 110001: New Delhi Head Office\n  - 400001: Mumbai GPO\n\nPro Tip: Always verify PIN code before mailing"
+            ]
+        }
+    },
+    {
+        "keywords": ["contact", "customer care", "help desk", "support", "phone number", "email", "grievance", "complaint number"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post Contact Information:\n\n• Toll Free: 1800 266 6868\n• Email: helpdesk@indiapost.gov.in\n• Grievance Cell: 011-23096010\n• Twitter: @IndiaPostOffice\n\nOffice Hours: 9:30 AM - 6:00 PM (Mon-Fri)",
+                "India Post Support Channels:\n• Toll-Free: 1800 266 6868 (8AM-8PM)\n• Email: helpdesk@indiapost.gov.in\n• Twitter: @IndiaPostHelp\n• Grievance Portal: https://pgportal.gov.in/\n\nRegional Offices: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx",
+                "Escalation Matrix:\n1. Local Post Office\n2. Divisional Office\n3. Circle Office\n4. Headquarters\n\nSpeed Post Complaints:\nspeedpostgrievance@indiapost.gov.in\n\nIPPB Support: 155299 (24x7)"
+            ]
+        }
+    },
+    {
+        "keywords": ["holidays", "post office holiday", "working days", "holiday list", "public holidays"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post Holiday Calendar:\n• Weekly Holiday: Sunday\n• Second Saturday: Closed\n• Gazetted Holidays: About 15 national holidays\n• State-specific holidays\n\nView current year's list at:\nhttps://www.indiapost.gov.in/vas/pages/holidaylist.aspx",
+                "2024 Holiday Calendar:\n• National Holidays: 15 days\n• State-Specific Holidays\n• Weekly Off: Sundays\n• 2nd & 4th Saturdays closed\n\nDownload: https://www.indiapost.gov.in/vas/DOP/Pdf/Holiday_List_2024.pdf",
+                "Special Working Days:\n• Month-end: Extended hours\n• Festival Seasons: Some offices open\n• Exam Period: Extra counters for certificates\n\nNote: Delivery services continue on some holidays"
+            ]
+        }
+    },
+    {
+        "keywords": ["career", "jobs", "recruitment", "employment", "post office jobs", "apply for job"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post Recruitment:\n\nCurrent openings for:\n- Postal Assistants\n- Postmen\n- GDS (Gramin Dak Sevaks)\n- MTS\n\nApply at: https://www.indiapost.gov.in/recruitment\n\nNotifications also published in Employment News",
+                "Current Opportunities:\n• GDS (Gramin Dak Sevak)\n• Postal Assistant\n• Postman/MTS\n• Sorting Assistant\n\nApply at: https://www.indiapost.gov.in/recruitment\n\nExam Pattern: https://www.indiapost.gov.in/vas/DOP/Pdf/PA_SA_Syllabus.pdf",
+                "Career Resources:\n1. Previous Papers: https://www.indiapost.gov.in/vas/Pages/PreviousYearQuestionPaper.aspx\n2. Training Programs\n3. Skill Development\n\nBenefits:\n• Pension Scheme\n• Medical Facilities\n• Government Accommodation"
+            ]
+        }
+    },
+    {
+        "keywords": ["scheme", "new scheme", "latest scheme", "recent scheme", "upcoming services"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Recent India Post Schemes:\n1. Dak Pay - Digital Payment Solution\n2. QR Code based Money Order\n3. IPPB-India Post Payments Bank Services\n4. Retail Post - Bill Payments\n5. Passport Seva Kendras at Post Offices\n\nDetails at: https://www.indiapost.gov.in/vas/pages/schemes.aspx",
+                "Recent Initiatives:\n1. DakPay Digital Payments\n2. QR Code Money Orders\n3. Aadhaar Enabled Payment Services\n4. Retail Post for bill payments\n\nDetails: https://www.indiapost.gov.in/vas/pages/schemes.aspx",
+                "New Digital Services:\n• e-Stamp Paper\n• Online Postal Life Insurance\n• e-Post Office\n• WhatsApp Banking\n\nComing Soon:\n• Drone Deliveries (pilot phase)\n• Smart Post Offices"
+            ]
+        }
+    },
+    {
+        "keywords": ["what can you do", "capabilities", "functions", "features", "help", "how can you help"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "I can assist you with all India Post services including:\n\n• Tracking shipments\n• Locating post offices\n• Banking schemes info\n• Postal services details\n• Insurance products\n• Complaint registration\n• PIN code search\n\nJust ask or select from the options!",
+                "I Can Assist With:\n• Tracking & Delivery Updates\n• Post Office Locator\n• Banking Scheme Details\n• Complaint Registration\n• PIN Code Verification\n• Career Information\n\nTry: 'Track my parcel' or 'Open RD account'",
+                "My Services Include:\n1. Postal: Speed Post, Registered Mail\n2. Financial: Savings Schemes, Insurance\n3. Information: Holidays, Contacts\n4. Digital: Online Services Guidance\n\nFull List: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx"
+            ]
+        },
+        "options": [
+            { "text": "Track Item", "value": "track_trace" },
+            { "text": "Find Post Office", "value": "find_nearest_post_office" },
+            { "text": "Banking Services", "value": "banking_schemes" },
+            { "text": "Popular Queries", "value": "faq" },
+            { "text": "New Services", "value": "new_services" },
+            { "text": "Tutorial Videos", "value": "tutorials" }
+        ]
+    },
+    {
+        "keywords": ["website", "official website", "india post portal", "online services", "post office app"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post Official Website:\nhttps://www.indiapost.gov.in\n\nKey Sections:\n- Track & Trace\n- Post Office Locator\n- Online Booking\n- Banking Services\n- Philately\n- Recruitment\n\nMobile App also available on Play Store/App Store",
+                "Official Portal: https://www.indiapost.gov.in\nKey Sections:\n• Track Consignments\n• Find Post Office\n• Banking Services\n• Philately\n\nMobile Apps:\n• India Post\n• India Post Payments Bank",
+                "Digital Services Hub:\n1. ePost Office: https://www.epostoffice.gov.in\n2. Postal Shop: https://postalshop.indiapost.gov.in\n3. Stamp Ordering\n4. Business Post\n\nServices Available 24/7"
+            ]
+        }
+    },
+    {
+        "keywords": ["sorry", "i don't understand", "not sure", "confused", "repeat", "explain again"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "I apologize for any confusion. Let me try to help you better. Could you please:\n1. Rephrase your question\n2. Select from these common topics\n3. Type 'help' to see what I can do",
+                "Let me help differently. You can:\n1. Rephrase your question\n2. Choose from these options\n3. Type 'help' for assistance\n\nI'm still learning!",
+                "Apologies for the confusion. Try:\n• Using simpler words\n• Checking spelling\n• Selecting from menu\n\nI'll connect you to human agent if needed"
+            ]
+        },
+        "options": [
+            { "text": "Show Help", "value": "what can you do" },
+            { "text": "Main Menu", "value": "hi" },
+            { "text": "Live Agent", "value": "human_agent" },
+            { "text": "Feedback", "value": "feedback" }
+        ]
+    },
+    {
+        "keywords": ["late delivery", "delayed", "not received", "pending delivery", "where is my parcel"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "We’re sorry to hear about the delay.\nPlease share your tracking ID or registered details so we can check your delivery status."
+            ]
+        }
+    },
+    {
+        "keywords": ["wrong_item", "incorrect product", "not what I ordered","wrong item"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Apologies for the inconvenience.\nPlease provide your order number, and we’ll assist you with a replacement or return."
+            ]
+        }
+    },
+    {
+        "keywords": ["damaged", "broken", "defective", "damaged parcel", "broken item"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "We regret the damage caused.\nKindly upload a picture of the damaged item and share your order details for quick resolution."
+            ]
+        }
+    },
+    {
+        "keywords": ["payment","refund", "money back", "payment issue", "refund status"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "We understand your concern.\nRefunds usually take 5–7 business days.\nPlease provide your transaction ID so we can check the status."
+            ]
+        }
+    },
+    {
+     "keywords": ["other_complaints"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "We’re here to help.\nCould you please provide more details about your complaint so we can resolve it quickly?",
+                "you can directly drop a mail at xyz@gmail.com for any such thing"
+            ]
+        }
+    },
+    {
+        "keywords": ["complaint", "issue", "problem", "help", "customer complaint"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "We’re here to help.\nCould you please provide more details about your complaint so we can resolve it quickly?"
+            ]
+        },
+           "options": [
+            { "text": "Damaged Item", "value": "damaged" },
+           
+            { "text": "wrong delivery", "value": "wrong_item" },
+            { "text": "Refund/Payment", "value": "payment" },
+            { "text": "delayed", "value": "delayed" },
+             { "text": "other", "value": "other_complaints" }
+        ]
+    }
+    
+    ,
+    {
+        "keywords": ["customer support", "talk to agent", "human help", "speak to representative"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "I will connect you with a customer support representative for further assistance."
+            ]
+        }
+    },
+    {
+        "keywords": ["shipping_cost", "postage rates", "delivery charges", "speed post cost"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Shipping Rates Calculator:\nhttps://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx\n\nSample Rates (Speed Post):\n• 50gm: ₹35 (Local), ₹45 (National)\n• 1kg: ₹120 (Local), ₹150 (National)\n• +₹50 for Cash on Delivery",
+                "Parcel Charges Guide:\n1. Weight Slabs: 50gm-35kg\n2. Distance Zones: Local/State/National\n3. Additional Services:\n  - Insurance: ₹1 per ₹100\n  - Acknowledgment: ₹5\n\nPro Tip: Business parcels get volume discounts"
+            ]
+        }
+    },
+    {
+        "keywords": ["delivery_complaint", "missing parcel", "late delivery", "not received", "undelivered","lost","delivery complaint"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Complaint Resolution Steps:\n1. Track your item first\n2. Contact local post office\n3. Escalate via: https://pgportal.gov.in/\n4. Speed Post issues: speedpostgrievance@indiapost.gov.in\n\nStandard Resolution Time: 3-7 working days",
+                "Delivery Issues Help:\n• Missing Items: File within 30 days\n• Damaged Parcels: Report immediately\n• Delayed Delivery: Check for holidays/strikes\n\nCompensation Policy:\n• Insured items: Full value\n• Regular post: Limited liability"
+            ]
+        }
+    },
+    {
+        "keywords": ["insurance_schemes", "pli", "rpli", "postal life insurance", "rural postal life insurance"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "India Post offers a range of life insurance plans for government and private employees. These plans provide a high sum assured at low premiums. For details, visit: https://www.indiapost.gov.in/vas/pages/pli.aspx"
+            ]
+        },
+        "options": [
+            { "text": "Postal Life Insurance (PLI)", "value": "pli" },
+            { "text": "Rural Postal Life Insurance (RPLI)", "value": "rpli" }
+        ]
+    },
+    {
+        "keywords": ["raise_complaint", "lodge complaint", "file a complaint", "report issue", "grievance portal"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Please tell me what your complaint is about so I can direct you to the right channel.",
+                "To help you best, please select the type of issue you're facing or describe it briefly."
+            ]
+        },
+        "options": [
+            { "text": "Delivery Issue", "value": "delivery_complaint" },
+            { "text": "Damaged Item", "value": "damaged" },
+            { "text": "Refund/Payment", "value": "refund" },
+            { "text": "Service Issue", "value": "complaint" }
+        ]
+    },
+    {
+        "keywords": ["ok","k","okay","i got it","Accha"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "Yes,I hope you query got clarified!",
+                "Happy to serve you,Feel free to reach anytime.",
+                "Hnji."
+            ]
+        }
+    }
+]
