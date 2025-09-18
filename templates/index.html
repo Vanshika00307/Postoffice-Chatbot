@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Post - Postal Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+     
+       
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkG0GMBnYgfLT-kKCZ4TxY4KJwYIOrjouh1Q&s">
+                <h1>India Post</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Track</a></li>
+                    <li><a href="#">Post Office Locator</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>India Post - Delivering Trust Since 1854</h2>
+                <p>Connecting every corner of the nation with reliable postal services</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn">Track Your Item</a>
+                    <a href="#" class="btn btn-secondary">Find Post Office</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn2.advanceinfotech.org/bharatdirectory.in/1200x675/business/1385/india-post-office-delhi-1695463718.webp" alt="India Post Services">
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHt3JK4N6D_1taBrXAlmM3LDw6xOjU5osJkg&s" alt="Financial Services">
+                    <h3>Financial Services</h3>
+                    <p>Post Office Savings Bank, Sukanya Samriddhi, PPF and more</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://content.jdmagicbox.com/comp/def_content/postal-services-speed-post/y2v4mrjr5e-postal-services-speed-post-11-d68ac.jpg" alt="Postal Services">
+                    <h3>Postal Services</h3>
+                    <p>Letters, parcels, speed post, registered post and more</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/retail-businesses.jpg" alt="Retail Services">
+                    <h3>Retail Services</h3>
+                    <p>Bill payments, insurance, certificates and more</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Latest Updates</h2>
+            <div class="news-item">
+                <h3>New International Parcel Services</h3>
+                <p>India Post launches cost-effective international parcel services to 50+ countries.</p>
+            </div>
+            <div class="news-item">
+                <h3>Digital India Initiative</h3>
+                <p>Now book your parcels and make payments online through our portal.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Track Item</a></li>
+                        <li><a href="#">Find PIN Code</a></li>
+                        <li><a href="#">Calculate Rates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Mail Services</a></li>
+                        <li><a href="#">Financial Services</a></li>
+                        <li><a href="#">Retail Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Help Desk</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Made by Radhika, Rubaina and Vanshika</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-button" id="chatbotButton">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>India Post Assistant</h3>
+                <div class="header-buttons">
+                    <button class="reset-btn" id="resetChatbot" title="Reset Conversation">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button class="close-btn" id="closeChatbot">&times;</button>
+                </div>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="bot-message">
+                    
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="quitModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal-btn">&times;</span>
+        <h3>Are you sure you want to exit?</h3>
+        <p>All the Chat History will be lost!</p>
+        <div class="modal-buttons">
+            <button id="confirmQuit" class="btn btn-red">Confirm</button>
+            <button id="cancelQuit" class="btn btn-secondary">Cancel</button>
+        </div>
+     <div class="feedback-section">
+    <p>Was I Helpful? Your feedback matters!</p>
+    <div class="feedback-emojis" id="starRating">
+        <i class="fas fa-star star" data-value="1"></i>
+        <i class="fas fa-star star" data-value="2"></i>
+        <i class="fas fa-star star" data-value="3"></i>
+        <i class="fas fa-star star" data-value="4"></i>
+        <i class="fas fa-star star" data-value="5"></i>
+    </div>
+    <button id="submitFeedback" class="btn btn-secondary" disabled>Submit</button>
+</div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
